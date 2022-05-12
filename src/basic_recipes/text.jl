@@ -1,3 +1,8 @@
+# TODO find an appropriate target and
+# @convert_target struct Text
+#     glyphs::Any
+# end
+
 function plot!(plot::Text)
     # attach a function to any text that calculates the glyph layout and stores it
     glyphcollection = lift(plot[1], plot.textsize, plot.font, plot.align,
